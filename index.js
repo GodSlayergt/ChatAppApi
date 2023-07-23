@@ -21,7 +21,7 @@ require("./src/passport/google_auth")(passport);
 
 
 //connecting to database
-mongoose.connect("mongodb://127.0.0.1:27017/worldcup?gssapiServiceName=mongodb",{useNewUrlParser: true})
+mongoose.connect("mongodb+srv://gtiwari037:DTJizkPfPqAYqe74@cluster0.8c0r8xj.mongodb.net/worldcup?retryWrites=true&w=majority",{useNewUrlParser: true})
  .then(()=>{console.log("connected with database");})
  .catch(err=>{console.log(err);})
 
